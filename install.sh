@@ -3,7 +3,7 @@
 clear
 
 # Set these to change the version of Trittium to install
-TARBALLURL="https://github.com/Trittium/Trittium-wallets/blob/master/Trittium-2.1.0-Ubuntu-daemon.tgz"
+TARBALLURL="https://raw.githubusercontent.com/Trittium/Trittium-wallets/master/Trittium-2.1.0-Ubuntu-daemon.tgz"
 TARBALLNAME="Trittium-2.1.0-Ubuntu-daemon.tgz"
 TRTTVERSION="2.1.0"
 
