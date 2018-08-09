@@ -3,7 +3,7 @@
 clear
 
 # Set these to change the version of Trittium to install
-TARBALLURL="https://ucbc2dfbce453128c54223dff406.dl.dropboxusercontent.com/cd/0/get/ANc0PaX29HloZs5ST1THYWogloJG39DmAePDiGWW1qn_Bs4HY2UeDzSYCPy1bO5QV2oTea-hSbDVLn0xmVZRIoXgfmZcECLRdB4lBeQo0pjI7F9S3n3DS8n9-6DxGQvcbO33QXs8ob-Tveb2vUiS5-nCoVDGDakHIqJnx0Lg8apGZOLGL_UKfuyvd3v9-L29LXg/file?_download_id=624398486726525141753214413243114457004039876759641484842475401495&_notify_domain=www.dropbox.com&dl=1"
+TARBALLURL="https://github.com/Trittium/Trittium-wallets/blob/master/Trittium-2.1.0-Ubuntu-daemon.tgz"
 TARBALLNAME="Trittium-2.1.0-Ubuntu-daemon.tgz"
 TRTTVERSION="2.1.0"
 
