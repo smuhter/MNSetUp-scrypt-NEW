@@ -77,9 +77,13 @@ USERHOME1=`eval echo "~$USER1"`
 
 read -e -p "Enter Masternode Private Key (e.g. 7edfjLCUzGczZi3JQw8GHp434R9kNY33eFyMGeKRymkB56G4324h # THE KEY YOU GENERATED EARLIER) : " KEY
 sleep 1
+
+
 clear
 
 read -e -p "Enter Masternode Private Key (e.g. 7edfjLCUzGczZi3JQw8GHp434R9kNY33eFyMGeKRymkB56G4324h # THE KEY YOU GENERATED EARLIER) : " KEY1
+
+
 clear
 
 # Generate random passwords
@@ -192,7 +196,7 @@ chown -R $USER1:$USER1 $USERHOME1/.trittium2
 #sudo systemctl start trittiumd
 #su - $USER -c trittiumd
 
-clear
+#clear
 
 #echo "Your masternode is syncing. Please wait for this process to finish."
 #echo "This can take up to a few hours. Do not close this window." && echo ""
