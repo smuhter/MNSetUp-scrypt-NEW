@@ -233,6 +233,6 @@ chown -R $USER1:$USER1 $USERHOME1/.trittium2
 #sleep 1
 #clear
 #su -c "/usr/local/bin/trittium-cli masternode status" $USER
-#sleep 5
+sleep 5
 #
 echo "" && echo "If you see @Masternode successfully started@ - Masternode setup completed." && echo ""
