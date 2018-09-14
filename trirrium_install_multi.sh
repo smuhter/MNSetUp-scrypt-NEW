@@ -1,32 +1,32 @@
 #!/bin/bash
-
-clear
-
+#
+#clear
+#
 # Set these to change the version of Trittium to install
 TARBALLURL="https://github.com/Trittium/trittium/releases/download/2.2.0.2/Trittium-2.2.0.2-Ubuntu-daemon.tgz"
 TARBALLNAME="Trittium-2.2.0.2-Ubuntu-daemon.tgz"
 TRTTVERSION="2.2.0.2"
-
+#
 #!/bin/bash
-
+#
 # Check if we are root
 if [ "$(id -u)" != "0" ]; then
    echo "This script must be run as root." 1>&2
    exit 1
 fi
-
+#
 # Check if we have enough memory
 if [[ `free -m | awk '/^Mem:/{print $2}'` -lt 850 ]]; then
   echo "This installation requires at least 1GB of RAM.";
   exit 1
 fi
-
+#
 # Check if we have enough disk space
 if [[ `df -k --output=avail / | tail -n1` -lt 10485760 ]]; then
   echo "This installation requires at least 10GB of free disk space.";
   exit 1
 fi
-
+#
 # Install tools for dig and systemctl
 echo "Preparing installation..."
 apt-get install git dnsutils systemd -y > /dev/null 2>&1
