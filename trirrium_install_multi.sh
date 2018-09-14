@@ -191,13 +191,13 @@ masternode=1
 EOL
 chmod 0600 $USERHOME1/.trittium2/trittium2.conf
 chown -R $USER1:$USER1 $USERHOME1/.trittium2
-
-
+#
+#
 #sudo systemctl start trittiumd
 #su - $USER -c trittiumd
-
+#
 #clear
-
+#
 #echo "Your masternode is syncing. Please wait for this process to finish."
 #echo "This can take up to a few hours. Do not close this window." && echo ""
 #BLOCKCOUNT=0
@@ -211,7 +211,7 @@ chown -R $USER1:$USER1 $USERHOME1/.trittium2
 #done
 #
 #clear
-
+#
 #cat << EOL
 #
 #Now, you need to start your masternode. Please go to your desktop wallet and
@@ -235,5 +235,4 @@ chown -R $USER1:$USER1 $USERHOME1/.trittium2
 #su -c "/usr/local/bin/trittium-cli masternode status" $USER
 #sleep 5
 #
-#echo "" && echo "If you see @Masternode successfully started@ - Masternode setup completed." && echo ""
-
+echo "" && echo "If you see @Masternode successfully started@ - Masternode setup completed." && echo ""
