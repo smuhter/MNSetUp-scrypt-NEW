@@ -180,19 +180,19 @@ mkdir $USERHOME1/.trittium2
 sleep 6
 
 
-# Create trittium2.conf
+# Create trittium2.conf (second node)
 touch $USERHOME1/.trittium2/trittium2.conf
 cat > $USERHOME1/.trittium2/trittium2.conf << EOL
 rpcuser=${RPCUSER1}
 rpcpassword=${RPCPASSWORD1}
 rpcallowip=127.0.0.2
-listen=1
+listen=0
 server=1
 daemon=1
 maxconnections=256
 rpcport=30003
-masternodeaddr=:30001
-bind=
+masternodeaddr=[IP_ADDRESS_2]:30001
+bind=[IP_ADDRESS_2]:30001
 masternodeprivkey=${KEY1}
 masternode=1
 EOL
