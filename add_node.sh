@@ -3,7 +3,7 @@
 clear
 
 
-USER2=tritt2
+USER2=tritt1
 
 adduser $USER2 --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password > /dev/null
 
@@ -38,8 +38,8 @@ server=1
 daemon=1
 maxconnections=256
 rpcport=30004
-masternodeaddr=[IP_ADDRESS_3]:30001
-bind=[IP_ADDRESS_3]:30001
+masternodeaddr=${IP_ADDRESS_3}:30001
+bind=${IP_ADDRESS_3}:30001
 masternodeprivkey=${KEY2}
 masternode=1
 EOL
