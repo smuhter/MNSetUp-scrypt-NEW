@@ -41,11 +41,11 @@ CHARS="/-\|"
 clear
 
 echo "
-  ------- TRITTIUM MASTERNODE INSTALLER v2.1.1--------+
+  ------- MYCE MASTERNODE INSTALLER v2.1.1--------+
  |                                                  |
  |                                                  |::
  |       The installation will install and run      |::
- |        the masternode under a user tritt.     |::
+ |        the masternode under a user myce.     |::
  |                                                  |::
  |        This version of installer will setup      |::
  |           fail2ban and ufw for your safety.      |::
