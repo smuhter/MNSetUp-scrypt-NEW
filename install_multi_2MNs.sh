@@ -71,10 +71,9 @@ USERHOME=`eval echo "~$USER"`
 
 
 read -e -p "Enter Masternode Private Key (e.g. 7edfjLCUzGczZi3JQw8GHp434R9kNY33eFyMGeKRymkB56G4324h # THE KEY YOU GENERATED EARLIER) : " KEY
-
-
-
+sleep 1
 clear
+
 
 # Generate random passwords
 RPCUSER=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 12 | head -n 1)
@@ -165,10 +164,14 @@ USERHOME1=`eval echo "~$USER1"`
 
 
 read -e -p "Enter Masternode Private Key (e.g. 7edfjLCUzGczZi3JQw8GHp434R9kNY33eFyMGeKRymkB56G4324h # THE KEY YOU GENERATED EARLIER) : " KEY1
-
-
-
+sleep 1
 clear
+
+read -e -p "Enter Second IP ADDRESS (e.g. 192.168.1.1) : " IP_ADDRESS_1
+sleep 1
+clear
+
+
 
 # Generate random passwords
 RPCUSER1=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 12 | head -n 1)
@@ -191,8 +194,8 @@ server=1
 daemon=1
 maxconnections=256
 rpcport=30003
-masternodeaddr=[IP_ADDRESS_2]:30001
-bind=[IP_ADDRESS_2]:30001
+masternodeaddr=[IP_ADDRESS_1]:30001
+bind=[IP_ADDRESS_1]:30001
 masternodeprivkey=${KEY1}
 masternode=1
 EOL
@@ -203,4 +206,4 @@ sleep 1
 
 clear
 
-echo "Your masternode is syncing. Please wait for this process to finish."
+echo "Your masternodes are installed."
