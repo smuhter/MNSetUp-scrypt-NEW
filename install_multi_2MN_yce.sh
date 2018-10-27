@@ -145,7 +145,7 @@ sleep 1
 USERHOME1=`eval echo "~$USER1"`
 
 
-read -e -p "Enter Masternode Private Key (e.g. 7edfjLCUzGczZi3JQw8GHp434R9kNY33eFyMGeKRymkB56G4324h # THE KEY YOU GENERATED EARLIER) : " KEY
+read -e -p "Enter Masternode Private Key (e.g. 7edfjLCUzGczZi3JQw8GHp434R9kNY33eFyMGeKRymkB56G4324h # THE KEY YOU GENERATED EARLIER) : " KEY1
 sleep 1
 clear
 
@@ -164,24 +164,24 @@ sleep 6
 
 
 # Create trittium2.conf (second node)
-touch $USERHOME/.myce/myce.conf
-cat > $USERHOME/.myce/myce.conf << EOL
-rpcuser=${RPCUSER}
-rpcpassword=${RPCPASSWORD}
-rpcallowip=127.0.0.1
+touch $USERHOME1/.myce/myce.conf
+cat > $USERHOME1/.myce/myce.conf << EOL
+rpcuser=${RPCUSER1}
+rpcpassword=${RPCPASSWORD1}
+rpcallowip=127.0.0.2
 listen=1
 server=1
 daemon=1
 maxconnections=256
-rpcport=20002
-externalip=${IP_ADDRESS}
-bind=${IP_ADDRESS}
-masternodeaddr=${IP_ADDRESS}:23511
-masternodeprivkey=${KEY}
+rpcport=20003
+externalip=${IP_ADDRESS_1}
+bind=${IP_ADDRESS_1}
+masternodeaddr=${IP_ADDRESS_1}:23511
+masternodeprivkey=${KEY1}
 masternode=1
 EOL
-chmod 0600 $USERHOME/.myce/myce.conf
-chown -R $USER:$USER $USERHOME/.myce
+chmod 0600 $USERHOME1/.myce/myce.conf
+chown -R $USER1:$USER1 $USERHOME1/.myce
 
 sleep 1
 
