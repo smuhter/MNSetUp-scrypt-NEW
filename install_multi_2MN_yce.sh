@@ -4,7 +4,7 @@ clear
 
 # Set these to change the version of Myce to install
 TARBALLURL="https://github.com/myceworld/myce/releases/download/v2.0.0.0/myce-2.0-x86_64-linux-gnu.tar.gz"
-TARBALLNAME="myce-2.0-x86_64-linux-gnu.tar.g"
+TARBALLNAME="myce-2.0-x86_64-linux-gnu.tar.gz"
 
 #!/bin/bash
 
