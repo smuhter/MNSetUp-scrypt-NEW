@@ -74,6 +74,10 @@ read -e -p "Enter Masternode Private Key (e.g. 7edfjLCUzGczZi3JQw8GHp434R9kNY33e
 sleep 1
 clear
 
+read -e -p "Enter Second IP ADDRESS (e.g. 192.168.1.1) : " IP_ADDRESS
+sleep 1
+clear
+
 
 # Generate random passwords
 RPCUSER=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 12 | head -n 1)
@@ -142,7 +146,7 @@ server=1
 daemon=1
 maxconnections=256
 rpcport=30002
-masternodeaddr=${EXTERNALIP}:30001
+masternodeaddr=${IP_ADDRESS}:30001
 masternodeprivkey=${KEY}
 masternode=1
 EOL
@@ -194,8 +198,8 @@ server=1
 daemon=1
 maxconnections=256
 rpcport=30003
-masternodeaddr=[IP_ADDRESS_1]:30001
-bind=[IP_ADDRESS_1]:30001
+masternodeaddr=[${IP_ADDRESS_1}]:30001
+bind=[${IP_ADDRESS_1}]:30001
 masternodeprivkey=${KEY1}
 masternode=1
 EOL
