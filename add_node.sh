@@ -3,7 +3,7 @@
 clear
 
 
-USER2=tritt1
+USER2=tritt2
 
 adduser $USER2 --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password > /dev/null
 
@@ -14,8 +14,13 @@ sleep 1
 USERHOME2=`eval echo "~$USER2"`
 
 read -e -p "Enter Masternode Private Key (e.g. 7edfjLCUzGczZi3JQw8GHp434R9kNY33eFyMGeKRymkB56G4324h # THE KEY YOU GENERATED EARLIER) : " KEY2
-
+sleep 1
 clear
+
+read -e -p "Enter Masternode IP Address (e.g. 192.168.1.1) : " IP_ADDRESS_2
+sleep 1
+clear
+
 
 # Generate random passwords
 RPCUSER2=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 12 | head -n 1)
@@ -32,14 +37,14 @@ touch $USERHOME2/.trittium2/trittium2.conf
 cat > $USERHOME2/.trittium2/trittium2.conf << EOL
 rpcuser=${RPCUSER2}
 rpcpassword=${RPCPASSWORD2}
-rpcallowip=127.0.0.2
+rpcallowip=127.0.0.3
 listen=0
 server=1
 daemon=1
 maxconnections=256
 rpcport=30004
-masternodeaddr=${IP_ADDRESS_3}:30001
-bind=${IP_ADDRESS_3}:30001
+masternodeaddr=${IP_ADDRESS_2}:30001
+bind=${IP_ADDRESS_2}:30001
 masternodeprivkey=${KEY2}
 masternode=1
 EOL
