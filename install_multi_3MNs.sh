@@ -118,10 +118,8 @@ if [ $(free | awk '/^Swap:/ {exit !$2}') ] || [ ! -f "/var/mnode_swap.img" ];the
     echo '/var/mnode_swap.img none swap sw 0 0' | tee -a /etc/fstab
     echo 'vm.swappiness=10' | tee -a /etc/sysctl.conf
     echo 'vm.vfs_cache_pressure=50' | tee -a /etc/sysctl.conf
-	exit 1
 else
     echo "* All good, we have a swap"
-	exit 1
 fi
 
 # Install Trittium daemon
