@@ -100,11 +100,12 @@ RPCPASSWORD=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 
 # Install Trittium daemon
 wget $TARBALLURL && tar -xvf $TARBALLNAME -C $USERHOME/  && rm $TARBALLNAME
-cp $USERHOME/myced /usr/local/bin
-cp $USERHOME/myce-cli /usr/local/bin
-cp $USERHOME/myce-tx /usr/local/bin
-rm $USERHOME/myce*
-chmod 755 /usr/local/bin/myce*
+cp /home/myce/myce-2.0.0/bin/myced /usr/local/bin
+cp /home/myce/myce-2.0.0/bin/myce-cli /usr/local/bin
+cp /home/myce/myce-2.0.0/bin/myce-qt /usr/local/bin
+cp /home/myce/myce-2.0.0/bin/myce-tx /usr/local/bin
+rm /home/myce/myce-2.0.0/bin/myce*
+rm -f /home/myce/myce-2.0.0/*
 # Create .myce directory
 mkdir $USERHOME/.myce
 
