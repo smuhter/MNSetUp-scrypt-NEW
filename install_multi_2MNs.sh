@@ -105,7 +105,6 @@ apt-get -qq install aptitude
 #
 # /* no parameters, creates and activates a swapfile since VPS servers often do not have enough RAM for compilation */
 #
-function swaphack() {
 #check if swap is available
 if [ $(free | awk '/^Swap:/ {exit !$2}') ] || [ ! -f "/var/mnode_swap.img" ];then
     echo "* No proper swap, creating it"
@@ -121,7 +120,7 @@ if [ $(free | awk '/^Swap:/ {exit !$2}') ] || [ ! -f "/var/mnode_swap.img" ];the
 else
     echo "* All good, we have a swap"
 fi
-}
+
 
 # Install Trittium daemon
 #wget $TARBALLURL && unzip $TARBALLNAME -d $USERHOME/  && rm $TARBALLNAME
