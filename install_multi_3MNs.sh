@@ -168,6 +168,7 @@ daemon=1
 maxconnections=256
 rpcport=30002
 masternodeaddr=${IP_ADDRESS}:30001
+bind=${IP_ADDRESS}:30001
 masternodeprivkey=${KEY}
 masternode=1
 EOL
