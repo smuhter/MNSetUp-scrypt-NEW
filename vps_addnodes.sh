@@ -36,13 +36,13 @@ echo "
    +------- TRITTIUM MASTERNODE ADDNODES -------------+
  ::|                                                  |::
  ::|   The config has been updated with addnodes!     |::
- ::|               				                      |::
+ ::|                                                  |::
  ::|         A restart of the daemon is required      |::
  ::|               to  apply the changes              |::
  ::|                                                  |::
  ::|        Please, run the following commands:       |::
- ::|             trittium-cli daemon stop             |::
- ::|             ttittiumd start                      |::
+ ::|             trittium-cli -daemon stop            |::
+ ::|             trittiumd -daemon                    |::
  ::|                                                  |::
  +----------------------------------------------------+::
    ::::::::::::::::::::::::::::::::::::::::::::::::::
