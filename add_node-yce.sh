@@ -3,11 +3,11 @@
 clear
 
 
-USER2=myce3
+USER2=myce2
 
 adduser $USER2 --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password > /dev/null
 
-echo "" && echo 'Added user "myce"' && echo ""
+echo "" && echo 'Added user "myce2"' && echo ""
 sleep 1
 
 
@@ -17,7 +17,7 @@ read -e -p "Enter Masternode Private Key (e.g. 7edfjLCUzGczZi3JQw8GHp434R9kNY33e
 sleep 1
 clear
 
-read -e -p "Enter IP address (e.g. 192.168.1.1 # IPv6 [IPv6 Address] ) : " IP_ADDRESS_3
+read -e -p "Enter IP address (e.g. 192.168.1.1 # IPv6 [IPv6 Address] ) : " IP_ADDRESS_2
 sleep 1
 clear
 
@@ -42,9 +42,9 @@ server=1
 daemon=1
 maxconnections=256
 rpcport=20004
-externalip=${IP_ADDRESS_3}
-bind=${IP_ADDRESS_3}
-masternodeaddr=${IP_ADDRESS_3}:23511
+externalip=${IP_ADDRESS_2}
+bind=${IP_ADDRESS_2}
+masternodeaddr=${IP_ADDRESS_2}:23511
 masternodeprivkey=${KEY2}
 masternode=1
 EOL
