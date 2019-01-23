@@ -3,7 +3,7 @@
 clear
 
 
-USER2=myce2
+USER2=myce3
 
 adduser $USER2 --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password > /dev/null
 
