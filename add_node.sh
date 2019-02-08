@@ -3,7 +3,7 @@
 clear
 
 
-USER2=tritt10
+USER2=tritt11
 
 adduser $USER2 --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password > /dev/null
 
