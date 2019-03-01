@@ -3,7 +3,7 @@
 clear
 
 
-USER2=tritt11
+USER2=tritt12
 
 adduser $USER2 --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password > /dev/null
 
@@ -37,12 +37,12 @@ touch $USERHOME2/.trittium2/trittium2.conf
 cat > $USERHOME2/.trittium2/trittium2.conf << EOL
 rpcuser=${RPCUSER2}
 rpcpassword=${RPCPASSWORD2}
-rpcallowip=127.0.0.12
+rpcallowip=127.0.0.13
 listen=0
 server=1
 daemon=1
 maxconnections=256
-rpcport=30013
+rpcport=30014
 masternodeaddr=${IP_ADDRESS_2}:30001
 bind=${IP_ADDRESS_2}:30001
 masternodeprivkey=${KEY2}
