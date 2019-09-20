@@ -10,7 +10,7 @@ echo "" && echo 'Added user "tritt10"' && echo ""
 sleep 1
 
 
-USERHOME3=`eval echo "~$USER2"`
+USERHOME3=`eval echo "~$USER3"`
 
 read -e -p "Enter Masternode Private Key (e.g. 7edfjLCUzGczZi3JQw8GHp434R9kNY33eFyMGeKRymkB56G4324h # THE KEY YOU GENERATED EARLIER) : " KEY3
 sleep 1
