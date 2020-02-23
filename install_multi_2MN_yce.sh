@@ -3,8 +3,8 @@
 clear
 
 # Set these to change the version of Myce to install
-TARBALLURL="https://github.com/myceworld/myce/releases/download/v2.0.0.0/myce-2.0-x86_64-linux-gnu.tar.gz"
-TARBALLNAME="myce-2.0-x86_64-linux-gnu.tar.gz"
+TARBALLURL="https://github.com/myceworld/myce/releases/download/v3.0.2.0/myce-3.0.2-x86_64-linux-gnu.tar.gz"
+TARBALLNAME="myce-3.0.2-x86_64-linux-gnu.tar.gz"
 
 #!/bin/bash
 
@@ -100,12 +100,12 @@ RPCPASSWORD=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 
 # Install Trittium daemon
 wget $TARBALLURL && tar -xvf $TARBALLNAME -C $USERHOME/  && rm $TARBALLNAME
-cp /home/myce/myce-2.0.0/bin/myced /usr/local/bin
-cp /home/myce/myce-2.0.0/bin/myce-cli /usr/local/bin
-cp /home/myce/myce-2.0.0/bin/myce-qt /usr/local/bin
-cp /home/myce/myce-2.0.0/bin/myce-tx /usr/local/bin
-rm /home/myce/myce-2.0.0/bin/myce*
-rm -f /home/myce/myce-2.0.0/*
+cp /home/myce/myce-3.0.2/bin/myced /usr/local/bin
+cp /home/myce/myce-3.0.2/bin/myce-cli /usr/local/bin
+cp /home/myce/myce-3.0.2/bin/myce-qt /usr/local/bin
+cp /home/myce/myce-3.0.2/bin/myce-tx /usr/local/bin
+rm /home/myce/myce-3.0.2/bin/myce*
+rm -f /home/myce/myce-3.0.2/*
 # Create .myce directory
 mkdir $USERHOME/.myce
 
