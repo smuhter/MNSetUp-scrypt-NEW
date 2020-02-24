@@ -3,7 +3,7 @@
 clear
 
 
-USER2=myce3
+USER2=myce2
 
 adduser $USER2 --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password > /dev/null
 
@@ -36,7 +36,7 @@ touch $USERHOME2/.myce/myce.conf
 cat > $USERHOME2/.myce/myce.conf << EOL
 rpcuser=${RPCUSER2}
 rpcpassword=${RPCPASSWORD2}
-rpcallowip=127.0.0.2
+rpcallowip=127.0.0.22
 listen=0
 server=1
 daemon=1
